@@ -47,22 +47,34 @@ void loop()
 
    if (GamePad.isUpPressed())
   {
-
+      motor1.drive(255,1000);
+      motor1.brake();
+      motor2.drive(255,1000);
+      motor2.brake();
+      delay(1000);
   }
 
   if (GamePad.isDownPressed())
   {
-
+      motor1.drive(-255,1000);
+      motor1.brake();
+      motor2.drive(-255,1000);
+      motor2.brake();
+      delay(1000);
   }
 
-  if (GamePad.isLeftPressed())
+  if (GamePad.isLeftPressed()) 
   {
-
+      motor2.drive(255,1000);
+      motor2.brake();
+      delay(1000);
   }
 
   if (GamePad.isRightPressed())
   {
-
+      motor1.drive(255,1000);
+      motor1.brake();
+      delay(1000);
   }
 
   if (GamePad.isSquarePressed())
@@ -83,12 +95,20 @@ void loop()
 
   if (GamePad.isCrossPressed())
   {
-
+      motor1.drive(-255,1000);
+      motor1.brake();
+      motor2.drive(-255,1000);
+      motor2.brake();
+      delay(1000);
   }
 
   if (GamePad.isTrianglePressed())
   {
-
+      motor1.drive(255,1000);
+      motor1.brake();
+      motor2.drive(255,1000);
+      motor2.brake();
+      delay(1000);
   }
 
   if (GamePad.isStartPressed())
